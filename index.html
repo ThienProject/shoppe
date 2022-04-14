@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
 </head>
 
 <body>
     <div id="wrapper">
         <header id="header">
-            <div class="grid">
-                <nav class="navbar">
+            <div class="grid wide">
+                <nav class="navbar  hide">
                     <ul class="navbar-list">
                         <li class="navbar-list__item navbar-list__item--separate">Kênh người bán</li>
                         <li class="navbar-list__item navbar-list__item--separate">Trở thành người bán Shopee</li>
@@ -145,7 +145,10 @@
                     </ul>
                 </nav>
                 <div class="search">
-                    <div class="search-logo">
+                    <label for="mobile-search-checked " class="search__mobile">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <div class="search-logo hide-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="search-logo__img ">
                                 <g fill-rule="evenodd">
@@ -156,7 +159,7 @@
                             </svg>
                         </a>
                     </div>
-
+                    <input type="checkbox" name="" hidden id="mobile-search-checked">
                     <div class="search-bar">
                         <div class="search-bar__inputWrap">
                             <input type="text" class="search-bar__input" placeholder="Nhập từ khóa">
@@ -208,642 +211,942 @@
                             </span>
 
                             <!-- search-cart__list--noCart -->
-                            
-                                <div class="search-cart__list ">
-                                    
-                                    <img src="./assets/img/noCart.png" alt="" class="search-cart__list--noCart-img">
-                                    <span class="search-cart__list-mess">Chưa có sản phẩn nào !</span>
-    
-                                    <h4 class="search-cart__heading">Sản phẩm đã thêm</h4>
-                                    <ul class="search-cart__cart-listItem">
-                                        <li class="cart-item">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
-                                                alt="" class="cart-item__img">
-                                            <div class="cart-item__infor">
-                                                <div class="cart-infor__itemHead">
-                                                    <h5 class="cart-infor__itemHead-name">
-                                                        Hot girl ảnh thẻ Hot girl ảnh thẻ
-                                                        Hot girl ảnh thẻHot girl ảnh thẻHot girl ảnh thẻHot girl ảnh thẻHot girl ảnh thẻHot girl ảnh thẻ
-                                                    </h5>
-                                                    <div class="cart-infor__itemHead__priceGroup">
-                                                        <span class="cart-infor__itemHead-price">
-                                                            5.000.000đ
-                                                        </span>
-                                                        <span class="cart-infor__itemHead-multiply">x</span>
-                                                        <span class="cart-infor__itemHead-quantity">3</span>
-                                                    </div>
-    
+
+                            <div class="search-cart__list ">
+
+                                <img src="./assets/img/noCart.png" alt="" class="search-cart__list--noCart-img">
+                                <span class="search-cart__list-mess">Chưa có sản phẩn nào !</span>
+
+                                <h4 class="search-cart__heading">Sản phẩm đã thêm</h4>
+                                <ul class="search-cart__cart-listItem">
+                                    <li class="cart-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
+                                            alt="" class="cart-item__img">
+                                        <div class="cart-item__infor">
+                                            <div class="cart-infor__itemHead">
+                                                <h5 class="cart-infor__itemHead-name">
+                                                    Hot girl ảnh thẻ Hot girl ảnh thẻ
+                                                    Hot girl ảnh thẻHot girl ảnh thẻHot girl ảnh thẻHot girl ảnh thẻHot
+                                                    girl ảnh thẻHot girl ảnh thẻ
+                                                </h5>
+                                                <div class="cart-infor__itemHead__priceGroup">
+                                                    <span class="cart-infor__itemHead-price">
+                                                        5.000.000đ
+                                                    </span>
+                                                    <span class="cart-infor__itemHead-multiply">x</span>
+                                                    <span class="cart-infor__itemHead-quantity">3</span>
                                                 </div>
-                                                <div class="cart-infor__itemBody">
-                                                    <span class="cart-infor__itemBody-decription">phân loại da :
-                                                        trắng</span>
-                                                    <span class="cart-infor__itemBody-btnDelete">Xóa</span>
-                                                </div>
+
                                             </div>
-                                        </li>
-    
-                                        <li class="cart-item">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
-                                                alt="" class="cart-item__img">
-                                            <div class="cart-item__infor">
-                                                <div class="cart-infor__itemHead">
-                                                    <h5 class="cart-infor__itemHead-name">
-                                                        Hot girl ảnh thẻ
-                                                    </h5>
-                                                    <div class="cart-infor__itemHead__priceGroup">
-                                                        <span class="cart-infor__itemHead-price">
-                                                            5.000.000đ
-                                                        </span>
-                                                        <span class="cart-infor__itemHead-multiply">x</span>
-                                                        <span class="cart-infor__itemHead-quantity">3</span>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="cart-infor__itemBody">
-                                                    <span class="cart-infor__itemBody-decription">phân loại da :
-                                                        trắng</span>
-                                                    <span class="cart-infor__itemBody-btnDelete">Xóa</span>
-                                                </div>
+                                            <div class="cart-infor__itemBody">
+                                                <span class="cart-infor__itemBody-decription">phân loại da :
+                                                    trắng</span>
+                                                <span class="cart-infor__itemBody-btnDelete">Xóa</span>
                                             </div>
-                                        </li>
-    
-                                        <li class="cart-item">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
-                                                alt="" class="cart-item__img">
-                                            <div class="cart-item__infor">
-                                                <div class="cart-infor__itemHead">
-                                                    <h5 class="cart-infor__itemHead-name">
-                                                        Hot girl ảnh thẻ
-                                                    </h5>
-                                                    <div class="cart-infor__itemHead__priceGroup">
-                                                        <span class="cart-infor__itemHead-price">
-                                                            5.000.000đ
-                                                        </span>
-                                                        <span class="cart-infor__itemHead-multiply">x</span>
-                                                        <span class="cart-infor__itemHead-quantity">3</span>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="cart-infor__itemBody">
-                                                    <span class="cart-infor__itemBody-decription">phân loại da :
-                                                        trắng</span>
-                                                    <span class="cart-infor__itemBody-btnDelete">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="cart-item">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
-                                                alt="" class="cart-item__img">
-                                            <div class="cart-item__infor">
-                                                <div class="cart-infor__itemHead">
-                                                    <h5 class="cart-infor__itemHead-name">
-                                                        Hot girl ảnh thẻ
-                                                    </h5>
-                                                    <div class="cart-infor__itemHead__priceGroup">
-                                                        <span class="cart-infor__itemHead-price">
-                                                            5.000.000đ
-                                                        </span>
-                                                        <span class="cart-infor__itemHead-multiply">x</span>
-                                                        <span class="cart-infor__itemHead-quantity">3</span>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="cart-infor__itemBody">
-                                                    <span class="cart-infor__itemBody-decription">phân loại da :
-                                                        trắng</span>
-                                                    <span class="cart-infor__itemBody-btnDelete">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="cart-item">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
-                                                alt="" class="cart-item__img">
-                                            <div class="cart-item__infor">
-                                                <div class="cart-infor__itemHead">
-                                                    <h5 class="cart-infor__itemHead-name">
-                                                        Hot girl ảnh thẻ
-                                                    </h5>
-                                                    <div class="cart-infor__itemHead__priceGroup">
-                                                        <span class="cart-infor__itemHead-price">
-                                                            5.000.000đ
-                                                        </span>
-                                                        <span class="cart-infor__itemHead-multiply">x</span>
-                                                        <span class="cart-infor__itemHead-quantity">3</span>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="cart-infor__itemBody">
-                                                    <span class="cart-infor__itemBody-decription">phân loại da :
-                                                        trắng</span>
-                                                    <span class="cart-infor__itemBody-btnDelete">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="cart-item">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
-                                                alt="" class="cart-item__img">
-                                            <div class="cart-item__infor">
-                                                <div class="cart-infor__itemHead">
-                                                    <h5 class="cart-infor__itemHead-name">
-                                                        Hot girl ảnh thẻ
-                                                    </h5>
-                                                    <div class="cart-infor__itemHead__priceGroup">
-                                                        <span class="cart-infor__itemHead-price">
-                                                            5.000.000đ
-                                                        </span>
-                                                        <span class="cart-infor__itemHead-multiply">x</span>
-                                                        <span class="cart-infor__itemHead-quantity">3</span>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="cart-infor__itemBody">
-                                                    <span class="cart-infor__itemBody-decription">phân loại da :
-                                                        trắng</span>
-                                                    <span class="cart-infor__itemBody-btnDelete">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="cart-item">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
-                                                alt="" class="cart-item__img">
-                                            <div class="cart-item__infor">
-                                                <div class="cart-infor__itemHead">
-                                                    <h5 class="cart-infor__itemHead-name">
-                                                        Hot girl ảnh thẻ
-                                                    </h5>
-                                                    <div class="cart-infor__itemHead__priceGroup">
-                                                        <span class="cart-infor__itemHead-price">
-                                                            5.000.000đ
-                                                        </span>
-                                                        <span class="cart-infor__itemHead-multiply">x</span>
-                                                        <span class="cart-infor__itemHead-quantity">3</span>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="cart-infor__itemBody">
-                                                    <span class="cart-infor__itemBody-decription">phân loại da :
-                                                        trắng</span>
-                                                    <span class="cart-infor__itemBody-btnDelete">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="cart-item">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
-                                                alt="" class="cart-item__img">
-                                            <div class="cart-item__infor">
-                                                <div class="cart-infor__itemHead">
-                                                    <h5 class="cart-infor__itemHead-name">
-                                                        Hot girl ảnh thẻ
-                                                    </h5>
-                                                    <div class="cart-infor__itemHead__priceGroup">
-                                                        <span class="cart-infor__itemHead-price">
-                                                            5.000.000đ
-                                                        </span>
-                                                        <span class="cart-infor__itemHead-multiply">x</span>
-                                                        <span class="cart-infor__itemHead-quantity">3</span>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="cart-infor__itemBody">
-                                                    <span class="cart-infor__itemBody-decription">phân loại da :
-                                                        trắng</span>
-                                                    <span class="cart-infor__itemBody-btnDelete">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <a class="cart__viewBtn btn btn--primary">Xem giỏ hàng</a>
-                                </div>
-                            </div>
-                           
-
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-            </div>
-
-        </header>
-        <div id="container">
-            <div class="grid">
-                <div class="grid__row app-content">
-                    <div class="grid__colunm-2">
-                        <nav class="category">
-
-                            <h3 class="category__heading">
-                                <i class=" category__heading-icon fas fa-list-ul"></i>
-                                Danh mục
-                            </h3>
-                            <ul class="category-list">
-                                <li class="category-item category-item--active">
-                                    <a href="" class="category-item__link">Trang điểm mặt</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Trang điểm môi</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Trang điểm mắt</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Trang điểm tóc</a>
-                                </li>
-                            </ul>
-
-                        </nav>
-                    </div>
-
-                    <div class="grid__column-10">
-                        <div class="home-filter">
-                            <span class="home-filter__title">Sắp xếp theo: </span>
-                            <button class="home-filte__btn btn home-filte__btn btn--primary">Phổ biến </button>
-                            <button class="home-filte__btn btn">Mới nhất </button>
-                            <button class="home-filte__btn btn">Bán chạy </button>
-                            <div class="select-input">
-                                <span class="select-input__label">Giá</span>
-                                <i class="select-input__icon fas fa-chevron-down"></i>
-                                <ul class="select-input__list">
-                                    <li class="select-input__item">
-                                        <a href="" class="select-input__item-link">Giá: Thấp đến cao</a>
+                                        </div>
                                     </li>
-                                    <li class="select-input__item">
-                                        <a href="" class="select-input__item-link">Giá: Cao đến thấp</a>
+
+                                    <li class="cart-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
+                                            alt="" class="cart-item__img">
+                                        <div class="cart-item__infor">
+                                            <div class="cart-infor__itemHead">
+                                                <h5 class="cart-infor__itemHead-name">
+                                                    Hot girl ảnh thẻ
+                                                </h5>
+                                                <div class="cart-infor__itemHead__priceGroup">
+                                                    <span class="cart-infor__itemHead-price">
+                                                        5.000.000đ
+                                                    </span>
+                                                    <span class="cart-infor__itemHead-multiply">x</span>
+                                                    <span class="cart-infor__itemHead-quantity">3</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="cart-infor__itemBody">
+                                                <span class="cart-infor__itemBody-decription">phân loại da :
+                                                    trắng</span>
+                                                <span class="cart-infor__itemBody-btnDelete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
+                                            alt="" class="cart-item__img">
+                                        <div class="cart-item__infor">
+                                            <div class="cart-infor__itemHead">
+                                                <h5 class="cart-infor__itemHead-name">
+                                                    Hot girl ảnh thẻ
+                                                </h5>
+                                                <div class="cart-infor__itemHead__priceGroup">
+                                                    <span class="cart-infor__itemHead-price">
+                                                        5.000.000đ
+                                                    </span>
+                                                    <span class="cart-infor__itemHead-multiply">x</span>
+                                                    <span class="cart-infor__itemHead-quantity">3</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="cart-infor__itemBody">
+                                                <span class="cart-infor__itemBody-decription">phân loại da :
+                                                    trắng</span>
+                                                <span class="cart-infor__itemBody-btnDelete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
+                                            alt="" class="cart-item__img">
+                                        <div class="cart-item__infor">
+                                            <div class="cart-infor__itemHead">
+                                                <h5 class="cart-infor__itemHead-name">
+                                                    Hot girl ảnh thẻ
+                                                </h5>
+                                                <div class="cart-infor__itemHead__priceGroup">
+                                                    <span class="cart-infor__itemHead-price">
+                                                        5.000.000đ
+                                                    </span>
+                                                    <span class="cart-infor__itemHead-multiply">x</span>
+                                                    <span class="cart-infor__itemHead-quantity">3</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="cart-infor__itemBody">
+                                                <span class="cart-infor__itemBody-decription">phân loại da :
+                                                    trắng</span>
+                                                <span class="cart-infor__itemBody-btnDelete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
+                                            alt="" class="cart-item__img">
+                                        <div class="cart-item__infor">
+                                            <div class="cart-infor__itemHead">
+                                                <h5 class="cart-infor__itemHead-name">
+                                                    Hot girl ảnh thẻ
+                                                </h5>
+                                                <div class="cart-infor__itemHead__priceGroup">
+                                                    <span class="cart-infor__itemHead-price">
+                                                        5.000.000đ
+                                                    </span>
+                                                    <span class="cart-infor__itemHead-multiply">x</span>
+                                                    <span class="cart-infor__itemHead-quantity">3</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="cart-infor__itemBody">
+                                                <span class="cart-infor__itemBody-decription">phân loại da :
+                                                    trắng</span>
+                                                <span class="cart-infor__itemBody-btnDelete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
+                                            alt="" class="cart-item__img">
+                                        <div class="cart-item__infor">
+                                            <div class="cart-infor__itemHead">
+                                                <h5 class="cart-infor__itemHead-name">
+                                                    Hot girl ảnh thẻ
+                                                </h5>
+                                                <div class="cart-infor__itemHead__priceGroup">
+                                                    <span class="cart-infor__itemHead-price">
+                                                        5.000.000đ
+                                                    </span>
+                                                    <span class="cart-infor__itemHead-multiply">x</span>
+                                                    <span class="cart-infor__itemHead-quantity">3</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="cart-infor__itemBody">
+                                                <span class="cart-infor__itemBody-decription">phân loại da :
+                                                    trắng</span>
+                                                <span class="cart-infor__itemBody-btnDelete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
+                                            alt="" class="cart-item__img">
+                                        <div class="cart-item__infor">
+                                            <div class="cart-infor__itemHead">
+                                                <h5 class="cart-infor__itemHead-name">
+                                                    Hot girl ảnh thẻ
+                                                </h5>
+                                                <div class="cart-infor__itemHead__priceGroup">
+                                                    <span class="cart-infor__itemHead-price">
+                                                        5.000.000đ
+                                                    </span>
+                                                    <span class="cart-infor__itemHead-multiply">x</span>
+                                                    <span class="cart-infor__itemHead-quantity">3</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="cart-infor__itemBody">
+                                                <span class="cart-infor__itemBody-decription">phân loại da :
+                                                    trắng</span>
+                                                <span class="cart-infor__itemBody-btnDelete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bB-hk79sq4tedqgW9K5YUlXrUdmziyjEvA&usqp=CAU"
+                                            alt="" class="cart-item__img">
+                                        <div class="cart-item__infor">
+                                            <div class="cart-infor__itemHead">
+                                                <h5 class="cart-infor__itemHead-name">
+                                                    Hot girl ảnh thẻ
+                                                </h5>
+                                                <div class="cart-infor__itemHead__priceGroup">
+                                                    <span class="cart-infor__itemHead-price">
+                                                        5.000.000đ
+                                                    </span>
+                                                    <span class="cart-infor__itemHead-multiply">x</span>
+                                                    <span class="cart-infor__itemHead-quantity">3</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="cart-infor__itemBody">
+                                                <span class="cart-infor__itemBody-decription">phân loại da :
+                                                    trắng</span>
+                                                <span class="cart-infor__itemBody-btnDelete">Xóa</span>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
-
-                            </div>
-                            <div class="home-filter__paginate">
-                                <span class="home-filter__paginate-numPage">
-                                    <span class="home-filter__paginate-pageCurrent">1</span>
-                                    /
-                                    14
-                                </span>
-                                <div class="home-filter__paginate-PageControl">
-                                    <a href="" class="home-filter__paginate-PageControl-btn home-filter__paginate-PageControl-btn--disable">
-                                        <i class="paginate__icon fas fa-chevron-left"></i>
-                                       
-                                    </a>
-                                    <a href="" class="home-filter__paginate-PageControl-btn">
-                                        <i class="paginate__icon fas fa-chevron-right"></i>
-                                       
-                                    </a>
-                                   
-                                </div>
+                                <a class="cart__viewBtn btn btn--primary">Xem giỏ hàng</a>
                             </div>
                         </div>
-                        <div class="home-product">
-                            <div class="gird">
-                                <div class="grid__row">
-                                    <div class="grid__colunm-2-4">
-                                        <a class="home-product-item" href="">
-                                            <div class="home-product-item__img" style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;"></div>
-                                            <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô 0.6g</h4>
-                                            <div class="home-product-item__price">
-                                                <span class="home-product-item__price-old">1.200.000đ</span>
-                                                <span class="home-product-item__price-current">200.000đ</span>
 
-                                            </div>
-                                            <div class="home-product-item__action">
-                                                <span class="home-product-item__heart home-product-item__heart--hearted">
-                                                    <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
-                                                  <i class=" home-product-item__heart-icon fas fa-heart"></i> 
-                                                </span>
-                                                <div class="home-product-item__rate">
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate fas fa-star"></i>
-                                                </div>
-                                                <span class="home-product-item__sold">33 Đã bán</span>
-                                            </div>
-                                            <div class="home-product-item__origin">
-                                                <span class="home-product-item__brand">Chanel</span>
-                                                <span class="home-product-item__country">Nhật Bản</span>
-                                            </div>
-                                            <div class="home-product-item__favorite">
-                                                <i class="fas fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home-product-item__sale-off">
-                                                <span class="home-product-item__percent">10%</span>
-                                                <label class ="home-product-item__label" for="">Giảm</label>
-                                            </div>
-                                        </a>
-                                       
-                                    </div>
-                                    <div class="grid__colunm-2-4">
-                                        <a class="home-product-item" href="">
-                                            <div class="home-product-item__img" style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;"></div>
-                                            <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô 0.6g</h4>
-                                            <div class="home-product-item__price">
-                                                <span class="home-product-item__price-old">1.200.000đ</span>
-                                                <span class="home-product-item__price-current">200.000đ</span>
 
-                                            </div>
-                                            <div class="home-product-item__action">
-                                                <span class="home-product-item__heart home-product-item__heart--hearted">
-                                                    <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
-                                                  <i class=" home-product-item__heart-icon fas fa-heart"></i> 
-                                                </span>
-                                                <div class="home-product-item__rate">
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate fas fa-star"></i>
-                                                </div>
-                                                <span class="home-product-item__sold">33 Đã bán</span>
-                                            </div>
-                                            <div class="home-product-item__origin">
-                                                <span class="home-product-item__brand">Chanel</span>
-                                                <span class="home-product-item__country">Nhật Bản</span>
-                                            </div>
-                                            <div class="home-product-item__favorite">
-                                                <i class="fas fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home-product-item__sale-off">
-                                                <span class="home-product-item__percent">10%</span>
-                                                <label class ="home-product-item__label" for="">Giảm</label>
-                                            </div>
-                                        </a>
-                                       
-                                    </div>
-                                    <div class="grid__colunm-2-4">
-                                        <a class="home-product-item" href="">
-                                            <div class="home-product-item__img" style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;"></div>
-                                            <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô 0.6g</h4>
-                                            <div class="home-product-item__price">
-                                                <span class="home-product-item__price-old">1.200.000đ</span>
-                                                <span class="home-product-item__price-current">200.000đ</span>
+                    </div>
 
-                                            </div>
-                                            <div class="home-product-item__action">
-                                                <span class="home-product-item__heart home-product-item__heart--hearted">
-                                                    <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
-                                                  <i class=" home-product-item__heart-icon fas fa-heart"></i> 
-                                                </span>
-                                                <div class="home-product-item__rate">
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate fas fa-star"></i>
-                                                </div>
-                                                <span class="home-product-item__sold">33 Đã bán</span>
-                                            </div>
-                                            <div class="home-product-item__origin">
-                                                <span class="home-product-item__brand">Chanel</span>
-                                                <span class="home-product-item__country">Nhật Bản</span>
-                                            </div>
-                                            <div class="home-product-item__favorite">
-                                                <i class="fas fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home-product-item__sale-off">
-                                                <span class="home-product-item__percent">10%</span>
-                                                <label class ="home-product-item__label" for="">Giảm</label>
-                                            </div>
-                                        </a>
-                                       
-                                    </div>
-                                    <div class="grid__colunm-2-4">
-                                        <a class="home-product-item" href="">
-                                            <div class="home-product-item__img" style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;"></div>
-                                            <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô 0.6g</h4>
-                                            <div class="home-product-item__price">
-                                                <span class="home-product-item__price-old">1.200.000đ</span>
-                                                <span class="home-product-item__price-current">200.000đ</span>
 
-                                            </div>
-                                            <div class="home-product-item__action">
-                                                <span class="home-product-item__heart home-product-item__heart--hearted">
-                                                    <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
-                                                  <i class=" home-product-item__heart-icon fas fa-heart"></i> 
-                                                </span>
-                                                <div class="home-product-item__rate">
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate fas fa-star"></i>
-                                                </div>
-                                                <span class="home-product-item__sold">33 Đã bán</span>
-                                            </div>
-                                            <div class="home-product-item__origin">
-                                                <span class="home-product-item__brand">Chanel</span>
-                                                <span class="home-product-item__country">Nhật Bản</span>
-                                            </div>
-                                            <div class="home-product-item__favorite">
-                                                <i class="fas fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home-product-item__sale-off">
-                                                <span class="home-product-item__percent">10%</span>
-                                                <label class ="home-product-item__label" for="">Giảm</label>
-                                            </div>
-                                        </a>
-                                       
-                                    </div>
-                                    <div class="grid__colunm-2-4">
-                                        <a class="home-product-item" href="">
-                                            <div class="home-product-item__img" style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;"></div>
-                                            <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô 0.6g</h4>
-                                            <div class="home-product-item__price">
-                                                <span class="home-product-item__price-old">1.200.000đ</span>
-                                                <span class="home-product-item__price-current">200.000đ</span>
 
-                                            </div>
-                                            <div class="home-product-item__action">
-                                                <span class="home-product-item__heart home-product-item__heart--hearted">
-                                                    <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
-                                                  <i class=" home-product-item__heart-icon fas fa-heart"></i> 
-                                                </span>
-                                                <div class="home-product-item__rate">
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate--gold fas fa-star"></i>
-                                                    <i class="home-product-item__rate fas fa-star"></i>
-                                                </div>
-                                                <span class="home-product-item__sold">33 Đã bán</span>
-                                            </div>
-                                            <div class="home-product-item__origin">
-                                                <span class="home-product-item__brand">Chanel</span>
-                                                <span class="home-product-item__country">Nhật Bản</span>
-                                            </div>
-                                            <div class="home-product-item__favorite">
-                                                <i class="fas fa-check"></i>
-                                                <span>Yêu thích</span>
-                                            </div>
-                                            <div class="home-product-item__sale-off">
-                                                <span class="home-product-item__percent">10%</span>
-                                                <label class ="home-product-item__label" for="">Giảm</label>
-                                            </div>
-                                        </a>
-                                       
-                                    </div>
-                                    
-                                  
-                                   
-                                   
-                                   
-                                
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="pagination home-product__pagination">
-                            <li class="pagination__Item">
-                                <a href="" class="paginationLink">
-                                    <i class="pagination__icon fas fa-chevron-left"></i>
-                                    
-                                </a>
+
+                </div>
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item active"><a href="" class=" header__sort-link">Liên quan</a></li>
+                <li class="header__sort-item"><a href="" class="header__sort-link">Mới nhất</a></li>
+                <li class="header__sort-item"><a href="" class="header__sort-link">Bán chạy</a></li>
+                <li class="header__sort-item"><a href="" class="header__sort-link">Giá</a></li>
+            </ul>
+    </div>
+
+    </header>
+    <div id="container">
+        <div class="grid wide">
+            <div class="row sm-gutter app-content">
+                <div class="col l-2 m-0 c-0">
+                    <nav class="category">
+
+                        <h3 class="category__heading">
+                            <i class=" category__heading-icon fas fa-list-ul"></i>
+                            Danh mục
+                        </h3>
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Trang điểm mặt</a>
                             </li>
-                            
-                            <li class="pagination__Item pagination__Item--active">
-                                <a href="" class="paginationLink"> 
-                                    1
-                                </a>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Trang điểm môi</a>
                             </li>
-                            <li class="pagination__Item">
-                                <a href="" class="paginationLink"> 
-                                  2
-                                </a>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Trang điểm mắt</a>
                             </li>
-                            <li class="pagination__Item">
-                                <a href="" class="paginationLink"> 
-                                    3
-                                </a>
-                            </li>
-                            <li class="pagination__Item">
-                                <a href="" class="paginationLink"> 
-                                  4
-                                </a>
-                            </li>
-                            <li class="pagination__Item">
-                                <a href="" class="paginationLink"> 
-                                 5
-                                </a>
-                            </li>
-                            <li class="pagination__Item">
-                                <a href="" class="paginationLink"> 
-                                ...
-                                </a>
-                            </li>
-                            <li class="pagination__Item">
-                                <a href="" class="paginationLink"> 
-                                    <i class="pagination__icon fas fa-chevron-right"></i>
-                                </a>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Trang điểm tóc</a>
                             </li>
                         </ul>
+
+                    </nav>
+                </div>
+
+                <div class="col l-10 m-12 c-12">
+                    <div class="home-filter hide">
+                        <span class="home-filter__title">Sắp xếp theo: </span>
+                        <button class="home-filte__btn btn home-filte__btn btn--primary">Phổ biến </button>
+                        <button class="home-filte__btn btn">Mới nhất </button>
+                        <button class="home-filte__btn btn">Bán chạy </button>
+                        <div class="select-input">
+                            <span class="select-input__label">Giá</span>
+                            <i class="select-input__icon fas fa-chevron-down"></i>
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__item-link">Giá: Thấp đến cao</a>
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__item-link">Giá: Cao đến thấp</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="home-filter__paginate">
+                            <span class="home-filter__paginate-numPage">
+                                <span class="home-filter__paginate-pageCurrent">1</span>
+                                /
+                                14
+                            </span>
+                            <div class="home-filter__paginate-PageControl">
+                                <a href=""
+                                    class="home-filter__paginate-PageControl-btn home-filter__paginate-PageControl-btn--disable">
+                                    <i class="paginate__icon fas fa-chevron-left"></i>
+
+                                </a>
+                                <a href="" class="home-filter__paginate-PageControl-btn">
+                                    <i class="paginate__icon fas fa-chevron-right"></i>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="mobile-category">
+                        <ul class="mobile-category__list">
+                            <li class="mobile-category__item ">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Men shop</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Beauty</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Beauty</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Beauty</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Beauty</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Beauty</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Beauty</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Beauty abcdjadfkajsdfkwskdjfsk</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="home-product">
+                        <div class="gird">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img"
+                                            style="background-image:url(https://cf.shopee.vn/file/27d5d9a65baa115fd523bb4bfab73c43_tn) ;">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bút kẻ mắt FOCALLURE chống nước nhanh khô
+                                            0.6g</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000đ</span>
+                                            <span class="home-product-item__price-current">200.000đ</span>
+
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__heart home-product-item__heart--hearted">
+                                                <i class=" home-product-item__heart-icon-empty far fa-heart"></i>
+                                                <i class=" home-product-item__heart-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rate">
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate--gold fas fa-star"></i>
+                                                <i class="home-product-item__rate fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">33 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Chanel</span>
+                                            <span class="home-product-item__country">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">10%</span>
+                                            <label class="home-product-item__label" for="">Giảm</label>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination home-product__pagination">
+                        <li class="pagination__Item">
+                            <a href="" class="paginationLink">
+                                <i class="pagination__icon fas fa-chevron-left"></i>
+
+                            </a>
+                        </li>
+
+                        <li class="pagination__Item pagination__Item--active">
+                            <a href="" class="paginationLink">
+                                1
+                            </a>
+                        </li>
+                        <li class="pagination__Item">
+                            <a href="" class="paginationLink">
+                                2
+                            </a>
+                        </li>
+                        <li class="pagination__Item">
+                            <a href="" class="paginationLink">
+                                3
+                            </a>
+                        </li>
+                        <li class="pagination__Item">
+                            <a href="" class="paginationLink">
+                                4
+                            </a>
+                        </li>
+                        <li class="pagination__Item">
+                            <a href="" class="paginationLink">
+                                5
+                            </a>
+                        </li>
+                        <li class="pagination__Item">
+                            <a href="" class="paginationLink">
+                                ...
+                            </a>
+                        </li>
+                        <li class="pagination__Item">
+                            <a href="" class="paginationLink">
+                                <i class="pagination__icon fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="grid wide footer_content">
+            <div class="row">
+                <div class="col l-2-4 m-3 c-6">
+                    <h3 class="footer__heading">
+                        Chăm sóc khách hàng
+
+                    </h3>
+                    <ul class="footer__listLink">
+                        <li><a href="" class="listItem">
+                                Trung tâm trợ giúp
+                            </a></li>
+                        <li><a href="" class="listItem">
+                                VanThien.dev@gmail.com
+                            </a></li>
+                        <li><a href="" class="listItem">
+                                Hướng dẫn mua hàng
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-3 c-6">
+                    <h3 class="footer__heading">
+                        Giới thiệu
+
+                    </h3>
+                    <ul class="footer__listLink">
+                        <li><a href="" class="listItem">
+                                Trung tâm trợ giúp
+                            </a></li>
+                        <li><a href="" class="listItem">
+                                VanThien.dev@gmail.com
+                            </a></li>
+                        <li><a href="" class="listItem">
+                                Hướng dẫn mua hàng
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="col l-2-4 m-3 c-6">
+                    <h3 class="footer__heading">
+                        Danh mục
+                    </h3>
+                    <ul class="footer__listLink">
+                        <li><a href="" class="listItem">
+                                <i class="fab fa-facebook"></i>
+                                Facebook
+                            </a></li>
+                        <li><a href="" class="listItem ">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a></li>
+                        <li><a href="" class="listItem">
+                                <i class="fab fa-linkedin-in"></i>
+                                Linked
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-3 c-6">
+                    <h3 class="footer__heading">
+                        Theo dõi
+                    </h3>
+                    <ul class="footer__listLink">
+                        <li><a href="" class="listItem">
+                                Trung tâm trợ giúp
+                            </a></li>
+                        <li><a href="" class="listItem">
+                                VanThien.dev@gmail.com
+                            </a></li>
+                        <li><a href="" class="listItem">
+                                Hướng dẫn mua hàng
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-8 c-8">
+                    <h3 class="footer__heading">
+                        Vào cửa hàng trên ứng dụng
+                    </h3>
+                    <div class="footer__download">
+                        <a href=""><img src="./assets/img/Qrcode.png" alt="" class="footer__downQr"></a>
+                        <div class="footer__downApp">
+
+                            <a href=""><img src="/assets/img/ch_play.png" alt=""></a>
+
+
+
+                            <a href=""> <img src="/assets/img/store.png" alt=""></a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div id="footer">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__colunm-2-4">
-                            <h3 class="footer__heading">
-                                    Chăm sóc khách hàng
-                                    
-                            </h3>
-                            <ul class="footer__listLink">
-                                <li><a href="" class="listItem">
-                                    Trung tâm trợ giúp
-                                </a></li>
-                                <li><a href="" class="listItem">
-                                    VanThien.dev@gmail.com
-                                </a></li>
-                                <li><a href="" class="listItem">
-                                    Hướng dẫn mua hàng
-                                </a></li>
-                            </ul>
-                        </div>
-                        <div class="grid__colunm-2-4">
-                            <h3 class="footer__heading">
-                                    Giới thiệu
-                                    
-                            </h3>
-                            <ul class="footer__listLink">
-                                <li><a href="" class="listItem">
-                                    Trung tâm trợ giúp
-                                </a></li>
-                                <li><a href="" class="listItem">
-                                    VanThien.dev@gmail.com
-                                </a></li>
-                                <li><a href="" class="listItem">
-                                    Hướng dẫn mua hàng
-                                </a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="grid__colunm-2-4">
-                            <h3 class="footer__heading">
-                                    Danh mục
-                            </h3>
-                            <ul class="footer__listLink">
-                                <li><a href="" class="listItem">
-                                    <i class="fab fa-facebook"></i>
-                                    Facebook
-                                </a></li>
-                                <li><a href="" class="listItem ">
-                                    <i class="fab fa-instagram"></i>
-                                    Instagram
-                                </a></li>
-                                <li><a href="" class="listItem">
-                                    <i class="fab fa-linkedin-in"></i>
-                                    Linked
-                                </a></li>
-                            </ul>
-                        </div>
-                        <div class="grid__colunm-2-4">
-                            <h3 class="footer__heading">
-                                    Theo dõi
-                            </h3>
-                            <ul class="footer__listLink">
-                                <li><a href="" class="listItem">
-                                    Trung tâm trợ giúp
-                                </a></li>
-                                <li><a href="" class="listItem">
-                                    VanThien.dev@gmail.com
-                                </a></li>
-                                <li><a href="" class="listItem">
-                                    Hướng dẫn mua hàng
-                                </a></li>
-                            </ul>
-                        </div>
-                        <div class="grid__colunm-2-4">
-                            <h3 class="footer__heading">
-                                    Vào cửa hàng trên ứng dụng
-                            </h3>
-                            <div class="footer__download">
-                                <a href=""><img src="./assets/img/Qrcode.png" alt="" class="footer__downQr"></a>
-                                <div class="footer__downApp">
-                                    
-                                       <a href=""><img src="/assets/img/ch_play.png" alt=""></a> 
-                                        
-                                    
-                                  
-                                       <a href=""> <img src="/assets/img/store.png" alt=""></a> 
-                                    </div>  
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="footer__bottom">
-                    <div class="grid">
-                        <p class="footer__copyright">© 2021 - Bản quyền thuộc về Văn Thiên.</p>
-                    </div>
-                </div>
+
+    </div>
+    <div class="footer__bottom">
+        <div class="grid wide">
+            <p class="footer__copyright">© 2021 - Bản quyền thuộc về Văn Thiên.</p>
         </div>
+    </div>
+    </div>
     </div>
     <!-- modal layout -->
     <!--    <div class="modal">
